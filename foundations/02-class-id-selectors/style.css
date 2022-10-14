@@ -1,7 +1,7 @@
 .odd-num {
     background-color: rgb(255, 192, 203);
 
-    font-family: Verdana, DejaVu sans-serif;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
 }
 
 .odd-num.cooler {
