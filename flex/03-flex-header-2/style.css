@@ -12,6 +12,18 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  /* change#1: make header class a flex container and add a border to make my life easy */
+  display: flex;
+  /* border: 5px solid red; */
+
+  /* change#5: center all items vertically */
+  align-items: center;
+
+  /* change#6: adding 8px space between everything and the edge of the header.*/
+  padding: 8px;
+
+  /* change#9: adding 16px space between all logo and link container */
+  column-gap: 16px;
 }
 
 .profile-image {
@@ -27,6 +39,8 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  /* change#4: adding borders to logo to make my life easier */
+  /* border: 5px solid yellowgreen; */
 }
 
 button {
@@ -45,4 +59,27 @@ a {
 
 ul {
   list-style-type: none;
+
+  /* change#2: make ul a flex container to change the default alignment of its elements
+     and add a border to make my life easier */
+  display: flex;
+  /* border: 5px solid green; */
+ 
+  /* change#7: removing default indentation due to ul and adding 16px space between
+  elements */
+  padding: 0;
+  column-gap: 16px;
+
+}
+
+/* change#3: declaring right-items as a flex container and adding borders to it and 
+adding left margin to it */
+
+.right-items {
+  display: flex;
+  /* border: 5px solid yellowgreen; */
+  margin-left: auto;
+
+  /* change#8: adding 16px space between elements */
+  column-gap: 16px;
 }
