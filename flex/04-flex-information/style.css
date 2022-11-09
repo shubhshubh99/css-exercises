@@ -10,6 +10,53 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+
+  /* change#1: declaring title as a flex container and centering it. also adding border */
+  display: flex;
+  /* border: 3px solid green; */
+  justify-content: center;
+}
+
+/* change#2: declaring flex container and adding borders to it and a top margin as well */
+.container {
+  display: flex;
+  /* border: 3px solid red; */
+  margin-top: 32px;
+
+  /* change#4: adding 52px between items */
+  gap: 52px;
+
+  /* change#6: horizontally centering all items */
+  justify-content: center;
+}
+
+/* change#3: adding borders & width to plants to make my life easy */
+.plant {
+  width: 200px;
+  /* border: 3px solid green; */
+
+  /* change#5: declaring plant as a flex container and wrapping its contents (basically
+  moving items to a new line if they are too large to display in one line) */
+  display: flex;
+  flex-wrap: wrap;
+
+  /* change#7: horizontally centering items in plant container and adding some gap
+  between image and text */
+  justify-content: center;
+  gap: 8px;
+}
+
+/* temp-change: adding borders around image to make my life easier */
+.plant img {
+  /* border: 3px solid blue; */
+}
+
+.text {
+  /* border: 3px solid blueviolet; */
+  
+  /* change#8: align text to the center*/
+  text-align: center;
+
 }
 
 /* do not edit this footer */
@@ -24,3 +71,4 @@ img {
   justify-content: center;
   background: #eee;
 }
+
