@@ -9,12 +9,32 @@
   </head>
   <body>
     <div class="modal">
-      <div class="icon">!</div>
-      <div class="header">Are you sure you want to do that?</div>
-      <div class="close-button">✖</div>
-      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem consectetur sequi amet aspernatur cumque!</div>
-      <button class="continue">Continue</button>
-      <button class="cancel">Cancel</button>
+
+      <!-- change#1: adding a flex container from exclamation icon to cancel button -->
+      <div class="container1">
+
+        <div class="icon">!</div>
+
+        <!-- change#2: adding container2 from header to cancel -->
+        <div class="container2">
+          <!-- change#2: adding another container from header to cross -->
+          <div class="container3">
+            <div class="header">Are you sure you want to do that?</div>
+            <div class="close-button">✖</div>
+          </div>
+        
+          <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem consectetur sequi amet aspernatur cumque!</div>
+        
+          <!-- change#3: adding another container for continue & cancel button -->
+          <div class="container4">
+            <button class="continue">Continue</button>
+            <button class="cancel">Cancel</button>
+          </div>
+        </div>
+          
+        
+      </div>
+      
     </div>
   </body>
 </html>

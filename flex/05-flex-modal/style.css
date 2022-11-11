@@ -13,6 +13,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* temp-change: adding border */
+  /* border: 3px solid black; */
 }
 
 .modal {
@@ -33,6 +36,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* temp-change: adding border */
+  /* border: 3px solid black; */
+
+  /* change#3: keeping icon from being smashed */
+  flex: 0 0 auto;
 }
 
 .close-button {
@@ -46,6 +55,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* temp-change: adding border */
+  /* border: 3px solid black; */
 }
 
 button {
@@ -61,6 +73,54 @@ button.continue {
 
 button.cancel {
   background: white;
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   color: royalblue;
+}
+
+/* change#1: declaring all flex containers */
+.container1, .container2, .container3, .container4 {
+  display: flex;
+
+  /* temp-change: adding border */
+  /* border: 3px solid black; */
+
+}
+
+/* change#2: Now, should your items be too large 
+to all display in one line, they will wrap onto another line.*/
+.container2, .container3, .container4 {
+    flex-wrap: wrap;
+}
+
+/* change#4: trying to push cross in top-right corners */
+.container3 {
+  flex: 1;
+  justify-content: space-between;
+
+  /* change#10: aligning close button with header */
+  align-items: center;
+}
+
+/* change#5: padding in outermost container */
+.container1 {
+  padding: 10px;
+
+  /* change#9: adding gap between elements */
+  gap: 10px;
+} 
+
+/* change#6: adding bottom margin wherever needed */
+.container3, .text {
+  margin-bottom: 10px;
+}
+
+/* change#7: adding gap in container4 */
+.container4{
+  gap: 5px;
+}
+
+/* change#8: making header's size slightly larger and bold */
+.container3 {
+  font-size: 22px;
+  font-weight: bold;
 }
