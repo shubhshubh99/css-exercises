@@ -5,6 +5,12 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  /* change#2: declaring the whole page as a flex container & pushing header & footer to
+  top & bottom respectively */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
@@ -16,6 +22,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 10px;
 }
 
 input {
@@ -24,4 +31,56 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/* change#1: removing bullets, indent and underline from link */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+
+/* change#3: declaring header & footer as flex container to push ul items in horizontal 
+direction */
+
+.header,
+.footer {
+  display: flex;
+  padding: 10px;
+}
+
+/* change#4: pushing left and right link pairs in header & footer in horizontal 
+direction */
+
+.header .left-links,
+.header .right-links,
+.footer .left-links,
+.footer .right-links {
+  display: flex;
+  gap: 10px;
+}
+
+/* change#5: pushing right-links to right */
+
+.header .right-links,
+.footer .right-links {
+  margin-left: auto;
+}
+
+/* change#6: change the background color of footer */
+
+.footer {
+  background-color: #eeeeee;
+}
+
+/* change#7: centering logo, input & buttons to the center of screen */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
